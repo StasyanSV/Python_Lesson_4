@@ -30,18 +30,18 @@
 # Задайте последовательность чисел. Напишите программу,
 # которая выведет список неповторяющихся элементов исходной последовательности.
 #
-from random import randint
-
-some_list = [randint(1, 20) for _ in range(10)]
-print(*some_list, sep=', ')
-
-new_list = []
-
-for i in range(int(len(some_list))):
-    count = 0
-    for j in range(int(len(some_list))):
-        if some_list[i] == some_list[j]:
-            count += 1
-    if count < 2:
-        new_list.append(some_list[i])
-print(*new_list, sep=', ')
+# from random import randint
+#
+# some_list = [randint(1, 20) for _ in range(10)]
+# print(*some_list, sep=', ')
+#
+# new_list = []
+#
+# for i in range(int(len(some_list))):
+#     count = 0
+#     for j in range(int(len(some_list))):
+#         if some_list[i] == some_list[j]:
+#             count += 1
+#     if count < 2:
+#         new_list.append(some_list[i])
+# print(*new_list, sep=', ')
